@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    background-color: powderblue;
+    font-family: 'Train One', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: saddlebrown;
+    padding: 8px 12px;
+}
+
+.navbar_logo {
+    font-size: 36px;
+    padding-left: 20px;
+}
+
+.navbar_logo i {
+    color: hotpink;
+}
+.navbar_menu {
+    font-size: 24px;
+    padding-right: 50px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    
+}
+
+.navbar_menu li{
+    padding: 8px 12px;
+    margin-right: 8px;
+}
+
+.navbar_menu li :hover{
+    color: black;
+    background: greenyellow;
+    border-radius: 4px;
+}
+
+.navbar_toogleBtn{
+    display: none;
+    position: absolute;
+    right:32px;
+    font-size: 24px;
+}
+
+.photo{
+    text-align: center;
+    font-size: 30px;
+}
+
+.psa{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 20px;
+    border: solid 4px black;
+    border-radius: 10px;
+}
+
+
+.bTn{
+    display: flex;
+    justify-content: center;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 780px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar_menu li {
+        text-align: center;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .photo{
+        font-size: 20px;
+    }
+
+    .navbar_toogleBtn{
+        display: block;
+        margin-top: 6px;
+    }
+    .navbar_menu.active{
+        display: flex;
+    }
+}
+
+
